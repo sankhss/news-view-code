@@ -16,6 +16,7 @@
 		7EB02C1326B5CF7500E778E0 /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EB02C1226B5CF7500E778E0 /* BaseView.swift */; };
 		7EB02C1526B5D14A00E778E0 /* PostsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EB02C1426B5D14A00E778E0 /* PostsView.swift */; };
 		7EB02C1826B5D79700E778E0 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 7EB02C1726B5D79700E778E0 /* SnapKit */; };
+		7EB02C1A26B5DD6400E778E0 /* UIViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EB02C1926B5DD6400E778E0 /* UIViewController+Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,7 @@
 		7EB02C1026B5CCB200E778E0 /* ThemeManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeManager.swift; sourceTree = "<group>"; };
 		7EB02C1226B5CF7500E778E0 /* BaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
 		7EB02C1426B5D14A00E778E0 /* PostsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsView.swift; sourceTree = "<group>"; };
+		7EB02C1926B5DD6400E778E0 /* UIViewController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +73,7 @@
 				7EB02C1026B5CCB200E778E0 /* ThemeManager.swift */,
 				7EB02C1226B5CF7500E778E0 /* BaseView.swift */,
 				7EB02C1426B5D14A00E778E0 /* PostsView.swift */,
+				7EB02C1926B5DD6400E778E0 /* UIViewController+Extensions.swift */,
 			);
 			path = news;
 			sourceTree = "<group>";
@@ -153,6 +156,7 @@
 				7EB02C0126B5C15300E778E0 /* ViewController.swift in Sources */,
 				7EB02BFD26B5C15300E778E0 /* AppDelegate.swift in Sources */,
 				7EB02C1526B5D14A00E778E0 /* PostsView.swift in Sources */,
+				7EB02C1A26B5DD6400E778E0 /* UIViewController+Extensions.swift in Sources */,
 				7EB02C1326B5CF7500E778E0 /* BaseView.swift in Sources */,
 				7EB02BFF26B5C15300E778E0 /* SceneDelegate.swift in Sources */,
 				7EB02C1126B5CCB200E778E0 /* ThemeManager.swift in Sources */,
