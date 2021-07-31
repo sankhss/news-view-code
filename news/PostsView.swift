@@ -8,7 +8,8 @@
 import UIKit
 
 class PostsView: UIView, BaseView {
-    fileprivate let tableView: UITableView = {
+    
+    var tableView: UITableView = {
         let table = UITableView()
         table.translatesAutoresizingMaskIntoConstraints = false
         return table;
@@ -39,5 +40,6 @@ class PostsView: UIView, BaseView {
     
     func setupExtraConfigurations() {
         tableView.backgroundColor = .white
+        tableView.register(PostViewCell.self, forCellReuseIdentifier: "postViewCell")
     }
 }

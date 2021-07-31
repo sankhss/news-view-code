@@ -9,15 +9,18 @@ import UIKit
 
 class ViewController: UIViewController {
     
+    let postsView = PostsView(frame: UIScreen.main.bounds)
+    
     override func loadView() {
         super.loadView()
         
-        let custom = PostsView(frame: UIScreen.main.bounds)
-        view = custom
+        view = postsView
     }
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        postsView.tableView.dataSource = self
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -25,5 +28,21 @@ class ViewController: UIViewController {
         
         configureNavigationBar(title: "News", preferredLargeTitle: true)
     }
+}
+
+extension ViewController: UITableViewDelegate, UITableViewDataSource {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 3
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "postViewCell", for: indexPath) as! PostViewCell
+        cell.titleLabel.text = " Title"
+        cell.descriptionLabel.text = "Description"
+        
+        return cell
+    }
+    
+    
 }
 
