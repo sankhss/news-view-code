@@ -81,9 +81,8 @@ class PostViewCell: UITableViewCell, BaseView {
         headlineImageView.snp.makeConstraints { maker in
             maker.right.equalToSuperview().inset(8)
             maker.top.equalToSuperview().offset(8)
-            maker.bottom.equalToSuperview().inset(8)
-            maker.height.equalTo(50)
-            maker.width.equalTo(80)
+            maker.height.equalTo(70)
+            maker.width.equalTo(70)
         }
         
     }
