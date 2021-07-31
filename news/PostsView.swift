@@ -19,10 +19,12 @@ class PostsView: BaseView {
     }
     
     override func setupConstraints() {
-        tableView.topAnchor.constraint(equalTo: self.topAnchor).isActive = true
-        tableView.leftAnchor.constraint(equalTo: self.leftAnchor).isActive = true
-        tableView.bottomAnchor.constraint(equalTo: self.bottomAnchor).isActive = true
-        tableView.rightAnchor.constraint(equalTo: self.rightAnchor).isActive = true
+        tableView.snp.makeConstraints { maker in
+            maker.top.equalToSuperview()
+            maker.left.equalToSuperview()
+            maker.bottom.equalToSuperview()
+            maker.right.equalToSuperview()
+        }
     }
     
     override func setupExtraConfigurations() {
