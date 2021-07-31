@@ -21,12 +21,20 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         
         postsView.tableView.dataSource = self
+        
+        getArticles()
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
         configureNavigationBar(title: "News", preferredLargeTitle: true)
+    }
+    
+    private func getArticles() {
+        ArticleService().getAllHeadlinesFor(category: .business) { articles in
+            print(articles)
+        }
     }
 }
 
