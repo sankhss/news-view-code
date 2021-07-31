@@ -7,18 +7,28 @@
 
 import UIKit
 
-class PostsView: BaseView {
+class PostsView: UIView, BaseView {
     fileprivate let tableView: UITableView = {
         let table = UITableView()
         table.translatesAutoresizingMaskIntoConstraints = false
         return table;
     }()
     
-    override func addViews() {
+    override init(frame: CGRect = .zero) {
+        super.init(frame: frame)
+        
+        setup()
+    }
+    
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
+    func addViews() {
         addSubview(tableView)
     }
     
-    override func setupConstraints() {
+    func setupConstraints() {
         tableView.snp.makeConstraints { maker in
             maker.top.equalToSuperview()
             maker.left.equalToSuperview()
@@ -27,7 +37,7 @@ class PostsView: BaseView {
         }
     }
     
-    override func setupExtraConfigurations() {
+    func setupExtraConfigurations() {
         tableView.backgroundColor = .white
     }
 }
