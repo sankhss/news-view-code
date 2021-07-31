@@ -14,6 +14,7 @@
 		7EB02C0926B5C15400E778E0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7EB02C0726B5C15400E778E0 /* LaunchScreen.storyboard */; };
 		7EB02C1126B5CCB200E778E0 /* ThemeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EB02C1026B5CCB200E778E0 /* ThemeManager.swift */; };
 		7EB02C1326B5CF7500E778E0 /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EB02C1226B5CF7500E778E0 /* BaseView.swift */; };
+		7EB02C1526B5D14A00E778E0 /* PostsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EB02C1426B5D14A00E778E0 /* PostsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		7EB02C0A26B5C15400E778E0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7EB02C1026B5CCB200E778E0 /* ThemeManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeManager.swift; sourceTree = "<group>"; };
 		7EB02C1226B5CF7500E778E0 /* BaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
+		7EB02C1426B5D14A00E778E0 /* PostsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +68,7 @@
 				7EB02C0A26B5C15400E778E0 /* Info.plist */,
 				7EB02C1026B5CCB200E778E0 /* ThemeManager.swift */,
 				7EB02C1226B5CF7500E778E0 /* BaseView.swift */,
+				7EB02C1426B5D14A00E778E0 /* PostsView.swift */,
 			);
 			path = news;
 			sourceTree = "<group>";
@@ -141,6 +144,7 @@
 			files = (
 				7EB02C0126B5C15300E778E0 /* ViewController.swift in Sources */,
 				7EB02BFD26B5C15300E778E0 /* AppDelegate.swift in Sources */,
+				7EB02C1526B5D14A00E778E0 /* PostsView.swift in Sources */,
 				7EB02C1326B5CF7500E778E0 /* BaseView.swift in Sources */,
 				7EB02BFF26B5C15300E778E0 /* SceneDelegate.swift in Sources */,
 				7EB02C1126B5CCB200E778E0 /* ThemeManager.swift in Sources */,

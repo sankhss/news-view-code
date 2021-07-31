@@ -10,13 +10,16 @@ import UIKit
 class ViewController: UIViewController {
     
     override func loadView() {
-        let view = UIView(frame: UIScreen.main.bounds)
-        view.backgroundColor = .gray
-        self.view = view
+        super.loadView()
+        
+        let custom = PostsView(frame: UIScreen.main.bounds)
+        view = custom
     }
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        title = "News"
     }
 }
 

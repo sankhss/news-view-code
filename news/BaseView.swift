@@ -11,17 +11,17 @@ class BaseView: UIView {
     
     public override init(frame: CGRect) {
         super.init(frame: frame)
-        self.setup()
+        setup()
     }
     
     required public init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
-        self.setup()
+        setup()
     }
     
     required public init() {
         super.init(frame: CGRect.zero)
-        self.setup()
+        setup()
     }
     
     func addViews() { fatalError("Must be overridden") }
@@ -33,8 +33,8 @@ class BaseView: UIView {
 
 extension BaseView {
     fileprivate func setup() {
-        self.addViews()
-        self.setupConstraints()
-        self.setupExtraConfigurations()
+        addViews()
+        setupConstraints()
+        setupExtraConfigurations()
     }
 }
