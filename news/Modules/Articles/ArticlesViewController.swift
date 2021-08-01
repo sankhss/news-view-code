@@ -9,37 +9,44 @@ import UIKit
 
 class ArticlesViewController: UIViewController {
     
-    let articleListView = ArticleListView(frame: UIScreen.main.bounds)
+    private var viewModel = ArticleListViewModel()
+    private let customView = ArticleListView(frame: UIScreen.main.bounds)
     
     override func loadView() {
         super.loadView()
-        
-        view = articleListView
+        view = customView
     }
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        setupObservables()
         
-        articleListView.tableView.dataSource = self
+        viewModel.load()
+        customView.tableView.dataSource = self
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        
         configureNavigationBar(title: "News", preferredLargeTitle: true)
+    }
+    
+    private func setupObservables() {
+        viewModel.setData = {
+            self.customView.tableView.reloadData()
+        }
     }
 }
 
 extension ArticlesViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 3
+        return viewModel.numberOfArticles()
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "articleViewCell", for: indexPath) as! ArticleViewCell
-        cell.titleLabel.text = " Title"
-        cell.descriptionLabel.text = "Description"
-        
+        let articleViewModel = viewModel.articleAtIndex(index: indexPath.row)
+        cell.configure(with: articleViewModel)
+        cell.selectionStyle = .none
         return cell
     }
 }

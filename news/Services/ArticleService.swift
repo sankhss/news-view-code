@@ -20,7 +20,7 @@ class ArticleService {
 }
 
 extension ArticleService {
-    func articlesFor(categoryName: String) -> Resource<[Article]> {
+    private func articlesFor(categoryName: String) -> Resource<[Article]> {
         return Resource<[Article]>(url: URL.urlForTopHeadlinesForCategory(categoryName)) { data in
             return try! JSONDecoder().decode(Result.self, from: data).articles
         }
