@@ -8,7 +8,7 @@
 import UIKit
 import SnapKit
 
-class PostViewCell: UITableViewCell, BaseView {
+class ArticleViewCell: UITableViewCell, BaseView {
     
     fileprivate var stackView: UIStackView = {
         let stack = UIStackView()

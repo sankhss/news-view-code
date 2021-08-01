@@ -7,7 +7,7 @@
 
 import UIKit
 
-class PostsView: UIView, BaseView {
+class ArticleListView: UIView, BaseView {
     
     var tableView: UITableView = {
         let table = UITableView()
@@ -40,6 +40,6 @@ class PostsView: UIView, BaseView {
     
     func setupExtraConfigurations() {
         tableView.backgroundColor = .white
-        tableView.register(PostViewCell.self, forCellReuseIdentifier: "postViewCell")
+        tableView.register(ArticleViewCell.self, forCellReuseIdentifier: "articleViewCell")
     }
 }

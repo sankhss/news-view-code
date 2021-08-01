@@ -9,15 +9,15 @@
 /* Begin PBXBuildFile section */
 		7EB02BFD26B5C15300E778E0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EB02BFC26B5C15300E778E0 /* AppDelegate.swift */; };
 		7EB02BFF26B5C15300E778E0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EB02BFE26B5C15300E778E0 /* SceneDelegate.swift */; };
-		7EB02C0126B5C15300E778E0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EB02C0026B5C15300E778E0 /* ViewController.swift */; };
+		7EB02C0126B5C15300E778E0 /* ArticlesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EB02C0026B5C15300E778E0 /* ArticlesViewController.swift */; };
 		7EB02C0626B5C15400E778E0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7EB02C0526B5C15400E778E0 /* Assets.xcassets */; };
 		7EB02C0926B5C15400E778E0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7EB02C0726B5C15400E778E0 /* LaunchScreen.storyboard */; };
 		7EB02C1126B5CCB200E778E0 /* ThemeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EB02C1026B5CCB200E778E0 /* ThemeManager.swift */; };
 		7EB02C1326B5CF7500E778E0 /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EB02C1226B5CF7500E778E0 /* BaseView.swift */; };
-		7EB02C1526B5D14A00E778E0 /* PostsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EB02C1426B5D14A00E778E0 /* PostsView.swift */; };
+		7EB02C1526B5D14A00E778E0 /* ArticleListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EB02C1426B5D14A00E778E0 /* ArticleListView.swift */; };
 		7EB02C1826B5D79700E778E0 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 7EB02C1726B5D79700E778E0 /* SnapKit */; };
 		7EB02C1A26B5DD6400E778E0 /* UIViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EB02C1926B5DD6400E778E0 /* UIViewController+Extensions.swift */; };
-		7EB02C1C26B5E0EA00E778E0 /* PostViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EB02C1B26B5E0EA00E778E0 /* PostViewCell.swift */; };
+		7EB02C1C26B5E0EA00E778E0 /* ArticleViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EB02C1B26B5E0EA00E778E0 /* ArticleViewCell.swift */; };
 		7EB02C1F26B5F6C400E778E0 /* WebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EB02C1E26B5F6C400E778E0 /* WebService.swift */; };
 		7EB02C2226B5F8AA00E778E0 /* K.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EB02C2126B5F8AA00E778E0 /* K.swift */; };
 		7EB02C2526B5FAA600E778E0 /* Article.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EB02C2426B5FAA600E778E0 /* Article.swift */; };
@@ -30,15 +30,15 @@
 		7EB02BF926B5C15300E778E0 /* news.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = news.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7EB02BFC26B5C15300E778E0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7EB02BFE26B5C15300E778E0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		7EB02C0026B5C15300E778E0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		7EB02C0026B5C15300E778E0 /* ArticlesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticlesViewController.swift; sourceTree = "<group>"; };
 		7EB02C0526B5C15400E778E0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7EB02C0826B5C15400E778E0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7EB02C0A26B5C15400E778E0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7EB02C1026B5CCB200E778E0 /* ThemeManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeManager.swift; sourceTree = "<group>"; };
 		7EB02C1226B5CF7500E778E0 /* BaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
-		7EB02C1426B5D14A00E778E0 /* PostsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsView.swift; sourceTree = "<group>"; };
+		7EB02C1426B5D14A00E778E0 /* ArticleListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleListView.swift; sourceTree = "<group>"; };
 		7EB02C1926B5DD6400E778E0 /* UIViewController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extensions.swift"; sourceTree = "<group>"; };
-		7EB02C1B26B5E0EA00E778E0 /* PostViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostViewCell.swift; sourceTree = "<group>"; };
+		7EB02C1B26B5E0EA00E778E0 /* ArticleViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleViewCell.swift; sourceTree = "<group>"; };
 		7EB02C1E26B5F6C400E778E0 /* WebService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebService.swift; sourceTree = "<group>"; };
 		7EB02C2126B5F8AA00E778E0 /* K.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = K.swift; sourceTree = "<group>"; };
 		7EB02C2426B5FAA600E778E0 /* Article.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Article.swift; sourceTree = "<group>"; };
@@ -78,20 +78,17 @@
 		7EB02BFB26B5C15300E778E0 /* news */ = {
 			isa = PBXGroup;
 			children = (
+				7EB02C2F26B61E1400E778E0 /* Protocols */,
+				7EB02C2D26B61DA600E778E0 /* Modules */,
 				7EB02C2A26B601C700E778E0 /* Extensions */,
 				7EB02C2326B5FA8F00E778E0 /* Models */,
 				7EB02C2026B5F86100E778E0 /* Utils */,
 				7EB02C1D26B5F69E00E778E0 /* Services */,
 				7EB02BFC26B5C15300E778E0 /* AppDelegate.swift */,
 				7EB02BFE26B5C15300E778E0 /* SceneDelegate.swift */,
-				7EB02C0026B5C15300E778E0 /* ViewController.swift */,
 				7EB02C0526B5C15400E778E0 /* Assets.xcassets */,
 				7EB02C0726B5C15400E778E0 /* LaunchScreen.storyboard */,
 				7EB02C0A26B5C15400E778E0 /* Info.plist */,
-				7EB02C1026B5CCB200E778E0 /* ThemeManager.swift */,
-				7EB02C1226B5CF7500E778E0 /* BaseView.swift */,
-				7EB02C1426B5D14A00E778E0 /* PostsView.swift */,
-				7EB02C1B26B5E0EA00E778E0 /* PostViewCell.swift */,
 			);
 			path = news;
 			sourceTree = "<group>";
@@ -108,6 +105,7 @@
 		7EB02C2026B5F86100E778E0 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				7EB02C1026B5CCB200E778E0 /* ThemeManager.swift */,
 				7EB02C2126B5F8AA00E778E0 /* K.swift */,
 			);
 			path = Utils;
@@ -129,6 +127,40 @@
 				7EB02C2B26B601DE00E778E0 /* URL+Extensions.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		7EB02C2D26B61DA600E778E0 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				7EB02C2E26B61DB400E778E0 /* Articles */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		7EB02C2E26B61DB400E778E0 /* Articles */ = {
+			isa = PBXGroup;
+			children = (
+				7EB02C3026B61E4400E778E0 /* Article */,
+				7EB02C0026B5C15300E778E0 /* ArticlesViewController.swift */,
+				7EB02C1426B5D14A00E778E0 /* ArticleListView.swift */,
+			);
+			path = Articles;
+			sourceTree = "<group>";
+		};
+		7EB02C2F26B61E1400E778E0 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				7EB02C1226B5CF7500E778E0 /* BaseView.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		7EB02C3026B61E4400E778E0 /* Article */ = {
+			isa = PBXGroup;
+			children = (
+				7EB02C1B26B5E0EA00E778E0 /* ArticleViewCell.swift */,
+			);
+			path = Article;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -210,16 +242,16 @@
 				7EB02C2C26B601DE00E778E0 /* URL+Extensions.swift in Sources */,
 				7EB02C1F26B5F6C400E778E0 /* WebService.swift in Sources */,
 				7EB02C2226B5F8AA00E778E0 /* K.swift in Sources */,
-				7EB02C0126B5C15300E778E0 /* ViewController.swift in Sources */,
+				7EB02C0126B5C15300E778E0 /* ArticlesViewController.swift in Sources */,
 				7EB02BFD26B5C15300E778E0 /* AppDelegate.swift in Sources */,
-				7EB02C1526B5D14A00E778E0 /* PostsView.swift in Sources */,
+				7EB02C1526B5D14A00E778E0 /* ArticleListView.swift in Sources */,
 				7EB02C1A26B5DD6400E778E0 /* UIViewController+Extensions.swift in Sources */,
 				7EB02C1326B5CF7500E778E0 /* BaseView.swift in Sources */,
 				7EB02C2726B5FE5F00E778E0 /* ArticleService.swift in Sources */,
 				7EB02C2926B5FEC900E778E0 /* Category.swift in Sources */,
 				7EB02BFF26B5C15300E778E0 /* SceneDelegate.swift in Sources */,
 				7EB02C1126B5CCB200E778E0 /* ThemeManager.swift in Sources */,
-				7EB02C1C26B5E0EA00E778E0 /* PostViewCell.swift in Sources */,
+				7EB02C1C26B5E0EA00E778E0 /* ArticleViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

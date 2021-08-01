@@ -7,22 +7,20 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ArticlesViewController: UIViewController {
     
-    let postsView = PostsView(frame: UIScreen.main.bounds)
+    let articleListView = ArticleListView(frame: UIScreen.main.bounds)
     
     override func loadView() {
         super.loadView()
         
-        view = postsView
+        view = articleListView
     }
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        postsView.tableView.dataSource = self
-        
-        getArticles()
+        articleListView.tableView.dataSource = self
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -30,21 +28,15 @@ class ViewController: UIViewController {
         
         configureNavigationBar(title: "News", preferredLargeTitle: true)
     }
-    
-    private func getArticles() {
-        ArticleService().getAllHeadlinesFor(category: .business) { articles in
-            print(articles)
-        }
-    }
 }
 
-extension ViewController: UITableViewDelegate, UITableViewDataSource {
+extension ArticlesViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 3
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "postViewCell", for: indexPath) as! PostViewCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: "articleViewCell", for: indexPath) as! ArticleViewCell
         cell.titleLabel.text = " Title"
         cell.descriptionLabel.text = "Description"
         
