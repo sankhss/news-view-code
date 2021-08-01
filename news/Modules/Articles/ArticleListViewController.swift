@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ArticlesViewController: UIViewController {
+class ArticleListViewController: UIViewController {
     
     private var viewModel = ArticleListViewModel()
     private let customView = ArticleListView(frame: UIScreen.main.bounds)
@@ -23,6 +23,7 @@ class ArticlesViewController: UIViewController {
         
         viewModel.load()
         customView.tableView.dataSource = self
+        customView.tableView.delegate = self
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -35,19 +36,30 @@ class ArticlesViewController: UIViewController {
             self.customView.tableView.reloadData()
         }
     }
+    
+    private func pushToDetails(viewModel: ArticleDetailsViewModel) {
+        let detailsViewController = ArticleDetailsViewController()
+        detailsViewController.viewModel = viewModel
+        navigationController?.pushViewController(detailsViewController, animated: true)
+    }
 }
 
-extension ArticlesViewController: UITableViewDelegate, UITableViewDataSource {
+extension ArticleListViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return viewModel.numberOfArticles()
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "articleViewCell", for: indexPath) as! ArticleViewCell
-        let articleViewModel = viewModel.articleAtIndex(index: indexPath.row)
+        let articleViewModel = viewModel.articleAt(index: indexPath.row)
         cell.configure(with: articleViewModel)
         cell.selectionStyle = .none
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let detailsViewModel = viewModel.selectedArticleAt(index: indexPath.row)
+        pushToDetails(viewModel: detailsViewModel)
     }
 }
 

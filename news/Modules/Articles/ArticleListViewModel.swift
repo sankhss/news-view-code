@@ -18,15 +18,19 @@ extension ArticleListViewModel {
         return articles.count
     }
     
-    func articleAtIndex(index: Int) -> ArticleViewModel {
+    func articleAt(index: Int) -> ArticleViewModel {
         return ArticleViewModel(articles[index])
+    }
+    
+    func selectedArticleAt(index: Int) -> ArticleDetailsViewModel {
+        return ArticleDetailsViewModel(articles[index])
     }
 }
 
 extension ArticleListViewModel {
     
     func load() {
-        ArticleService().getAllHeadlinesFor(category: .business) { articles in
+        ArticleService().getAllHeadlinesFor(category: .sports) { articles in
             self.articles = articles
             self.setData?()
         }

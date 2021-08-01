@@ -9,7 +9,7 @@ import Foundation
 
 extension URL {
     static func urlForTopHeadlinesForCategory(_ category: String) -> URL {
-        let urlString = "\(K.API.url)&\(K.API.URLParams.category)=\(category)"
+        let urlString = "\(K.API.url)&\(K.API.URLParams.category)=\(category)&\(K.API.URLParams.country)=br"
         return URL(string: urlString)!
     }
 }
